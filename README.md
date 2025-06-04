@@ -13,5 +13,5 @@ This is my personal archive of self-study in R Studio.
 
 ### Models Created So Far
 
-- [x] 'Suicide_Analyze/': 청년 자살은 개인적인 것이 아닌 사회학적 원인을 가지는 현상이라는 것을 밝힌 통계적 모델  
+- [x] Suicide_Analyze: 청년 자살은 개인적인 것이 아닌 사회학적 원인을 가지는 현상이라는 것을 밝힌 통계적 모델  
   *Suicide_Analyze*: A statistical model revealing that youth suicide is not a personal issue but a phenomenon with sociological causes.
