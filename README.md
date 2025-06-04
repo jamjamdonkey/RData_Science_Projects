@@ -12,4 +12,4 @@ This is my personal archive of Self_Study of R Studio
 - [ ] Will be updated later.... (Comming Soon!)
 
 ### The models I've created so far
-- [ ] 
+- [ ] A statistical model for how youth suicide is not a personal matter
