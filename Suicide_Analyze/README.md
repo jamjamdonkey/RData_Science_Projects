@@ -81,5 +81,24 @@ Impulse Response Function(IRF)의 결과를 정량적으로 검증하기 위해,
 
 ![FEVD Result](./images/FEVD_Graph.png)
 
+---
+
+### 🧾 결론 | Conclusion
+
+자살은 단지 개인의 나약함이나 일탈적인 선택으로만 해석될 수 없습니다.  
+본 프로젝트는 청년 자살률을 다양한 사회경제적 변수와 연결해 분석함으로써, 자살이라는 비극적인 현상이 개인의 문제가 아니라 **사회 구조적 맥락에서 발생하는 문제임을 통계적으로 입증**하였습니다.
+
+> Suicide cannot be sufficiently explained as an individual weakness or isolated decision.  
+> Through statistical modeling of youth suicide rates in relation to multiple socio-economic factors, this project demonstrates that suicide is better understood as a **structural phenomenon shaped by systemic pressures**.
+
+청년 실업률, 가계부채, 근로시간 등은 청년 자살률에 대해 유의미한 설명력을 가지며, 칼부림과 같은 부정적 사회 사건이 **시간차를 두고 정서적 반응을 확산시키는 경향** 또한 시계열 분석을 통해 입증되었습니다.
+
+> Variables such as youth unemployment, household debt, and working hours showed statistically significant influence on suicide rates.  
+> Furthermore, negative social events—such as knife attacks—were shown to **induce delayed emotional contagion**, as evidenced by impulse response and variance decomposition analyses.
+
+이러한 결과는 자살을 포함한 사회적 위기 대응에 있어, 단기적 처방이 아닌 **사회 구조 전반의 건강성과 정서적 안전망 강화**가 필요함을 시사합니다.
+
+> These findings suggest that addressing suicide requires not short-term fixes but **long-term structural reform and emotional resilience at the societal level**.
+
 ✅ 마지막 수정일: 2025년 6월 4일  
 ✍️ 작성자: jamjamdonkey
