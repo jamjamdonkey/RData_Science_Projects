@@ -34,7 +34,7 @@
 다음 그래프는 청년 실업률과 자살률의 표준화된 값(Z-score) 간 회귀 분석 결과를 보여줍니다.  
 통계적으로 유의미한 음의 상관관계가 확인되었으며, 이는 청년 자살의 사회 구조적 요인을 지지하는 결과입니다.
 
-![Youth Suicide & Unemployment Relationship](./Suicide_Analyze/images/Z_Score_Graph.png)
+![Youth Suicide & Unemployment Relationship](Suicide_Analyze/images/Z_Score_Graph.png)
 
 ✅ **마지막 수정일**: 2025년 6월 4일  
 ✍️ **작성자**: jamjamdonkey
