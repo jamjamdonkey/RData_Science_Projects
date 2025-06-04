@@ -27,5 +27,14 @@
   - _A .docx report that includes the motivation behind the analysis, contextual background, data overview, and code execution screenshots._
 ---
 
+## 프로젝트 결과 | Project Results
+
+### 📈 청년 실업률과 자살률 간 통계적 관계
+
+다음 그래프는 청년 실업률과 자살률의 표준화된 값(Z-score) 간 회귀 분석 결과를 보여줍니다.  
+통계적으로 유의미한 음의 상관관계가 확인되었으며, 이는 청년 자살의 사회 구조적 요인을 지지하는 결과입니다.
+
+![Youth Suicide & Unemployment Relationship](C:/Users/JAMJAM\RData_Science_Projects/RData_Science_Projects/Suicide_Analyze/R_Code/images/Z_Score_Graph.png)
+
 ✅ **마지막 수정일**: 2025년 6월 4일  
 ✍️ **작성자**: jamjamdonkey
