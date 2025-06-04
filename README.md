@@ -13,4 +13,4 @@ This is my personal archive of self-study in R Studio.
 
 ### Models Created So Far
 
-- [x] Developed a statistical model analyzing youth suicide as a social phenomenon, not merely a personal excuse.
+- [x] Developed the statistical model in the *Suicide_Analyze* folder, analyzing youth suicide as a social phenomenon rather than merely a personal excuse.
