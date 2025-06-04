@@ -1,15 +1,16 @@
-# Data_Science_Projects /W R Studio
-R Learning Journey : Develop a variety of models that are both practical and fun for me. Since June 4 2025
+# Data_Science_Projects /w R Studio  
+R Learning Journey: Developing practical and engaging models. Since June 4, 2025
 
->Your beginnings will seem humble, so prosperous will your future be.
+> Your beginnings will seem humble, so prosperous will your future be.
 
-This is my personal archive of Self_Study of R Studio
+This is my personal archive of self-study in R Studio.
 
 ### What Will I Do?
 
-- [ ] Learn Some Basic Grammer Of R Studio
-- [ ] Predict a baseball player's performance with in-season data and compare it to actual data after the season. (using different variables that affect performance)
-- [ ] Will be updated later.... (Comming Soon!)
+- [ ] Learn basic R programming grammar using R Studio  
+- [ ] Predict a baseball player's performance during the season and compare it to post-season actuals  
+- [ ] Will be updated later... (Coming Soon!)
 
-### The models I've created so far
-- [ ] A statistical model for how youth suicide is not a personal matter
+### Models Created So Far
+
+- [x] Developed a statistical model analyzing youth suicide as a social phenomenon, not merely a personal excuse.
