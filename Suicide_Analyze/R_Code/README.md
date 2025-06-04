@@ -14,7 +14,7 @@ install.packages(c(
   "vars",       # VAR 모델링 및 IRF, FEVD
   "car"         # 다중공선성 검정 (VIF)
 ))
-
+```
 
 ## 🗂️ R 스크립트 설명 및 실행 순서
 
