@@ -1,7 +1,6 @@
 # Data_Science_Projects /W R Studio
 R Learning Journey : Develop a variety of models that are both practical and fun for me. Since June 4 2025
 
-=============
 >Your beginnings will seem humble, so prosperous will your future be.
 
 This is my personal archive of Self_Study of R Studio
