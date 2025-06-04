@@ -29,31 +29,56 @@
 
 ## 프로젝트 결과 | Project Results
 
-### 📈 청년 실업률과 자살률 간 통계적 관계
+### 📈 청년 실업률과 자살률 간 통계적 관계  
+### 📈 Statistical Relationship Between Youth Unemployment and Suicide
 
 다음 그래프는 청년 실업률과 자살률의 표준화된 값(Z-score) 간 회귀 분석 결과를 보여줍니다.  
 통계적으로 유의미한 음의 상관관계가 확인되었으며, 이는 청년 자살의 사회 구조적 요인을 지지하는 결과입니다.
 
+> The following graph shows the result of a linear regression between the standardized (Z-score) values of youth unemployment and suicide rates.  
+> A statistically significant **negative correlation** was observed (**p-value = 0.0084**, **Adjusted R² = 0.4358**), suggesting that youth suicide is linked to **structural socio-economic factors**, not merely individual circumstances.
+
 ![Youth Suicide & Unemployment Relationship](./images/Z_Score_Graph.png)
 
-### 🧪 칼부림 이슈가 자살 관심도에 미치는 시차적 영향 분석
+---
 
-Granger 인과성 검정 결과, 칼부림 관련 검색량(y)은 자살 관련 검색량(x)을 통계적으로 유의미하게 예측하는 것으로 나타났습니다.  
+### 🧪 칼부림 이슈가 자살 관심도에 미치는 시차적 영향 분석  
+### 🧪 Lagged Impact of Knife Attack Interest on Suicide Attention (IRF)
+
+Granger 인과성 검정 결과, 칼부림 관련 검색량(y)은 자살 관련 검색량(x)을 **통계적으로 유의미하게 예측**하는 것으로 나타났습니다.  
 이를 시간 흐름에 따라 시각화한 IRF(Impulse Response Function) 결과는 다음과 같습니다.
 
-칼부림 검색량이 증가한 후 약 13일부터 자살 검색량이 증가하며,  
-16일경 피크, 약 19일간 지속되는 영향력이 확인되었습니다.
+> The Granger causality test indicates that the search volume for "knife attack" (y) **significantly predicts** the search volume for "suicide" (x).  
+> The IRF (Impulse Response Function) graph below visualizes the time-lagged relationship between these two signals.
+
+칼부림 검색량이 증가한 후 약 **13일부터 자살 검색량이 증가**하며,  
+**16일경 피크**, 약 **19일간 지속**되는 영향력이 확인되었습니다.
+
+> After a surge in knife-related search activity, suicide-related searches begin to rise around **day 13**, reach a **local peak near day 16**, and the effect persists for approximately **19 days**.
+
 ![IRF Response](./images/IRF_Graph.png)
 
-### 📊 예측 오차 분산 분해 (FEVD)
+---
+
+### 📊 예측 오차 분산 분해 (FEVD)  
+### 📊 Forecast Error Variance Decomposition (FEVD)
 
 Impulse Response Function(IRF)의 결과를 정량적으로 검증하기 위해, Forecast Error Variance Decomposition(FEVD)을 수행했습니다.  
 이는 자살 검색량(x) 변화의 얼마만큼이 칼부림 검색량(y)이라는 외생변수에 의해 설명되는지를 시차별로 보여줍니다.
 
-- 14일 차에 약 50%,  
-- 16일 차부터는 약 75%에 육박하는 설명력**을 가지는 것으로 나타났습니다.
+> To quantitatively validate the IRF results, we performed Forecast Error Variance Decomposition (FEVD).  
+> This analysis estimates how much of the variation in suicide search volume (x) can be **attributed to knife-related searches (y)** over time.
 
-이는 IRF 결과가 단순 노이즈가 아니라 시계열적 인과 구조의 일부임을 강하게 지지합니다.
+- **14일 차에 약 50%**,  
+- **16일 차부터는 약 75%에 육박하는 설명력**을 가지는 것으로 나타났습니다.
+
+> The influence of y on x reaches **about 50% by day 14**,  
+> and **nearly 75% from day 16 onward**, indicating a strong structural impact.
+
+이는 IRF 결과가 단순 노이즈가 아니라 **시계열적 인과 구조의 일부**임을 강하게 지지합니다.
+
+> These findings support the conclusion that the IRF pattern is not noise, but part of a meaningful **time-dependent causal structure**.
+
 ![FEVD Result](./images/FEVD_Graph.png)
 
 ✅ 마지막 수정일: 2025년 6월 4일  
