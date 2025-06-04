@@ -14,15 +14,15 @@
 
 ## 📂 폴더 구조 | Folder Structure
 
-- `CSV/`  
+- `CSV`  
   - ‘자살’과 ‘칼부림’이라는 두 키워드를 구글 트렌드에 입력하여 수집한 최근 5년치(2020~2025)의 트렌드 데이터를 CSV로 저장  
   - _CSV files containing 5-year Google Trends data (2020–2025) for the keywords "suicide" and "stabbing"_
 
-- `R_Code/`  
+- `R_Code`  
   - 종속 변수(청년 자살률)와 독립 변수(청년 실업률, 가계부채, 근로시간)를 구분하고 Z-score 표준화를 거쳐 다중 회귀 분석 모형을 제작하였으며, 선형성 시각화 작업을 포함함. 또한 구글 트렌드 CSV 파일을 불러와 VAR 분석 및 FEVD(분산 분해) 분석을 수행함.  
   - _R scripts that standardize variables (Z-scores), build a multiple linear regression model with youth suicide as the dependent variable, visualize linearity, and perform VAR and FEVD analysis using processed Google Trends CSV data._
 
-- `Report_Kinda_Essay/`  
+- `Report_Kinda_Essay`  
   - 분석 내용 기반 보고서 및 소논문 (.docx, .pdf 등)  
   - _Reports and essays summarizing the findings and interpretations_
 
