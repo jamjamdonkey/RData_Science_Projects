@@ -23,9 +23,8 @@
   - _R scripts that standardize variables (Z-scores), build a multiple linear regression model with youth suicide as the dependent variable, visualize linearity, and perform VAR and FEVD analysis using processed Google Trends CSV data._
 
 - `Report_Kinda_Essay`  
-  - 분석 내용 기반 보고서 및 소논문 (.docx, .pdf 등)  
-  - _Reports and essays summarizing the findings and interpretations_
-
+  - 분석을 시작하게 된 계기와 문제의식, 데이터 설명 및 코드 실행 화면(스크린샷 포함)을 담은 .docx 형식의 보고서  
+  - _A .docx report that includes the motivation behind the analysis, contextual background, data overview, and code execution screenshots._
 ---
 
 ✅ **마지막 수정일**: 2025년 6월 4일  
