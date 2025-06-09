@@ -68,19 +68,73 @@ The project hypothesis is that **these variables can serve as leading indicators
 
 ---
 
-## 🗂️ 프로젝트 구조 | Project Structure
+## 🚀 프로젝트 진행 현황 | Project Progress
+
+### 2025-06-09 (Day 1)
+
+#### 📊 Data Handling & Merging
+
+- ✔️ CDS CSV 데이터 정리 및 Date 변환 (2008~2024 구간)
+- ✔️ Macro Data 정리:
+    - WTI 원유 가격
+    - 한국 국채 1Y/10Y → Term Spread 계산
+    - USD/KRW 환율
+    - VIX 지수
+    - KOSPI 지수
+- ✔️ 위 변수들과 CDS 스프레드 데이터를 병합 → `CDS_merged_for_model.csv` 생성 완료
+
+#### 🧪 ADF Test (정상성 검정)
+
+- Spread: 정상성 확보
+- WTI, Term Spread, EXR, VIX, KOSPI → 차분 후 정상성 확보
+- 데이터 전처리 완료 (1차 차분 변수 `d_*` 생성)
+
+#### 📈 Baseline Regression 결과
+
+- 모델: **ΔSpread ~ ΔWTI + ΔTerm Spread + ΔEXR + ΔVIX + ΔKOSPI**
+- 결과:
+    - 모델 설명력 낮음 (Adj. R² ≈ 0.1%)
+    - EXR만 약간 유의 (p < 0.05), 나머지 변수 유의하지 않음
+- 해석:
+    - Macro 변수의 일일 변화율로 CDS Spread 변화율 예측은 어려움 → CDS가 비선형적, 이벤트 기반 리스크 변수 특성이 강함
+    - Baseline Regression은 음의 결과라도 연구/보고서 상 중요한 기본 단계 → 완료
+
+#### ✅ 마무리
+
+- 첫 번째 baseline regression 단계 완료
+- 향후 방향:
+    - Lag 구조 적용한 모델 시도 (ARDL-like 접근)
+    - ΔSpread → event dummy 변수 활용한 고도화 가능성 검토
+    - 추후 Bloomberg 등에서 실제 CDS 데이터 확보 시 benchmark 가능
+
+---
+
+## 📂 프로젝트 구조 | Project Structure
 
 ```plaintext
 CDS_PREDICTION_MODEL/
 ├── README.md
 ├── LICENSE
 ├── .gitignore
-├── data/
+├── CSV/
 │   ├── *.csv
-├── scripts/
+├── R_CODE/
 │   ├── CDS_PREDIC_MODEL_CSV_HANDLING.R
 │   ├── CSV_COM.R
-│   ├── (future) CDS_PREDIC_MODEL_EDA.R
-│   ├── (future) CDS_PREDIC_MODEL_BASELINE_ML.R
-└── docs/
-    └── (EDA visualizations / plots)
+│   ├── CDS_LM_MODEL.R
+│   ├── MODEL_COM.R
+├── docs/
+│   ├── (EDA visualizations / plots)
+```
+
+---
+
+## ✏️ 향후 계획 | Next Steps
+
+- Lagged variable 기반 regression (ARDL-like structure) 적용
+- VAR 모델 시도 가능성 검토
+- Event dummy 설계 → 이벤트 기반 CDS 스프레드 반응 모델링 시도
+- 실제 고품질 CDS 프리미엄 데이터 확보 후 모델 검증
+
+---
+
