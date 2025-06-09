@@ -1,4 +1,4 @@
-# 📈 CDS Predict Model | CDS 프리딕트 모델 프로젝트
+# 📈 CDS Predict Model | CDS 예측 모델 프로젝트
 
 ---
 
